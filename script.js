@@ -102,7 +102,7 @@ function insereBotao(){
 async function copiarTexto(){
     let textoCopiado = document.querySelector(".area-texto");
     textoCopiado.setSelectionRange(0, 99999);
-    
+    document.execCommand("copy");
     await navigator.clipboard.writeText(textoCopiado.value);
 
     
