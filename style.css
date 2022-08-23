@@ -1,0 +1,206 @@
+body{
+    position: relative;
+        width: 1440px;/*1024px;*/
+        height: 1024px;/*768px;*/
+    
+        background: #F3F5FC;
+}
+
+.logo{
+    position: absolute;
+    width: 31.09px;
+    height: 48px;
+    left: 84px;
+    top: 40px;
+}
+
+.primeira-secao{
+    position: absolute;
+    top: 168px;
+    bottom: 72px;
+    left: 240px;
+    right: 520px;
+}
+
+.digite-texto{
+    position: relative;
+    width: 680px;
+    height: 48px;
+
+
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;/*define a negritude da fonte: de 100 à 900*/
+    font-size: 32px;
+    line-height: 150%;/*altura entr uma linha e outra*/
+
+    color: #0A3871;/*cor do texto*/
+    background-color: #F3F5FC;
+}
+
+.primeira-secao div{
+    position: absolute;
+    top: 683px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.primeira-secao div label{
+    position: relative;
+    display: inline-block;
+
+
+    width: 228px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+    opacity: 0.8;
+}
+
+.imagem-exclamacao{
+    position: absolute;
+    top: 683px;
+    left: 0;
+    display: inline-block;
+}
+
+.texto-exclamacao{
+    position: absolute;
+    display: flex;
+
+    left: 24px;
+    top: 683px;
+    width: 228px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+    opacity: 0.8;
+}
+
+button{
+    position: absolute;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    top: 34px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.botao-criptografar{
+    color: #FFFFFF;
+    background: #0A3871;
+}
+
+
+.botao-descriptografar {
+    left: 352px;
+    color: #0A3871;
+    background: #D8DFE8;
+}
+
+.botao-copiar{
+    position: absolute;
+    color: #0A3871;
+    width: 336px;
+    left: 32px;
+    top: 845px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition:  0.2s;
+    cursor: pointer;
+}
+
+.retangulo-inicial{
+    position: relative;
+    width: 400px;
+    height: 944px;
+    display: block;
+
+    top: 40px;
+    left: 1000px;
+    right: 40px;
+    bottom: 40px;
+    background: #FFFFFF;
+    /*sombreamento preto 8% de opacidade blur 32px*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.retangulo-inicial p{
+    width: 336px;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    margin: 0 32px;
+
+    position: absolute;
+}
+
+.area-texto{
+    resize: none;
+
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 32px;
+    top: 32px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    background-image: url("imagens/garoto.png");
+    background-repeat: no-repeat;
+    background-position: 0px 243px;/*0 left e 243 top*/
+    border: none;
+    color: #495057;
+}
+
+.area-texto + p{
+    top: 579px;
+    font-size: 24px;
+    height: 58px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #343A40;
+}
+
+.area-texto + p + p{
+    top: calc(579px + 58px + 16px);
+    font-size: 16px;
+    height: 48px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #495057;
+}
